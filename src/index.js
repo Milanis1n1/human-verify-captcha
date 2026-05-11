@@ -1,4 +1,4 @@
-class HumanVerifyCaptcha extends HTMLElement {
+class FrontEndCaptcha extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
@@ -45,7 +45,7 @@ class HumanVerifyCaptcha extends HTMLElement {
       this.verified = true;
       this.expired = false;
       this.attempts = 0;
-      this.token = "secure_human_token_" + Date.now();
+      this.token = "secure_token_" + Date.now();
       this.render();
 
       setTimeout(() => {
@@ -153,8 +153,8 @@ class HumanVerifyCaptcha extends HTMLElement {
 }
 
 // Check to prevent double-registering if imported multiple times
-if (!customElements.get("human-verify-captcha")) {
-  customElements.define("human-verify-captcha", HumanVerifyCaptcha);
+if (!customElements.get("frontend-captcha")) {
+  customElements.define("frontend-captcha", FrontEndCaptcha);
 }
 
-export default HumanVerifyCaptcha;
+export default FrontEndCaptcha;

@@ -1,6 +1,6 @@
 # Framework Integration Guide (USE_CASES.md)
 
-Because `human-verify-captcha` is built as a native Web Component (`<human-verify-captcha>`), it works seamlessly across any modern frontend framework.
+Because `frontend-captcha` is built as a native Web Component (`<frontend-captcha>`), it works seamlessly across any modern frontend framework.
 
 Below are step-by-step implementation examples for the most popular frameworks.
 
@@ -12,5 +12,5 @@ Before using the tag in any framework, you must import the package into your pro
 
 ```javascript
 // Add this to your root entry file
-import "human-verify-captcha";
+import "frontend-captcha";
 ```

@@ -5,7 +5,7 @@ Svelte treats Web Components almost identically to native HTML elements. You can
 
 ```svelte
 <script>
-  import 'human-verify-captcha';
+  import 'frontend-captcha';
 
   let captchaRef;
 
@@ -24,10 +24,10 @@ Svelte treats Web Components almost identically to native HTML elements. You can
 <form on:submit={handleSubmit}>
   <input type="email" placeholder="Enter your email" required />
 
-  <human-verify-captcha
+  <frontend-captcha
     bind:this={captchaRef}
     on:captcha-suspicious-activity={handleSuspicious}
-  ></human-verify-captcha>
+  ></frontend-captcha>
 
   <button type="submit">Register</button>
 </form>

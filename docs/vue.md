@@ -4,17 +4,17 @@
 Vue has excellent, native support for Web Components. You can listen to custom events using the standard `@` syntax and interact with the component using template refs.
 
 **Note:** If you get a "Failed to resolve component" warning in your console, tell Vite/Vue to ignore the tag in `vite.config.js`:
-`vue({ template: { compilerOptions: { isCustomElement: (tag) => tag === 'human-verify-captcha' } } })`
+`vue({ template: { compilerOptions: { isCustomElement: (tag) => tag === 'frontend-captcha' } } })`
 
 ```vue
 <template>
   <form @submit.prevent="handleSubmit">
     <input type="email" v-model="email" placeholder="Email" required />
 
-    <human-verify-captcha
+    <frontend-captcha
       ref="captchaComponent"
       @captcha-suspicious-activity="handleSuspicious"
-    ></human-verify-captcha>
+    ></frontend-captcha>
 
     <button type="submit">Sign Up</button>
   </form>
@@ -22,7 +22,7 @@ Vue has excellent, native support for Web Components. You can listen to custom e
 
 <script setup>
 import { ref } from "vue";
-import "human-verify-captcha";
+import "frontend-captcha";
 
 const email = ref("");
 const captchaComponent = ref(null);

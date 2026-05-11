@@ -14,7 +14,7 @@ export default function NextJsSignupForm() {
 
   useEffect(() => {
     // Import only on the client side
-    import("human-verify-captcha").then(() => {
+    import("frontend-captcha").then(() => {
       setIsLoaded(true);
     });
   }, []);
@@ -42,7 +42,7 @@ export default function NextJsSignupForm() {
       <input type="email" placeholder="Email" required />
 
       {isLoaded && (
-        <human-verify-captcha ref={captchaRef}></human-verify-captcha>
+        <frontend-captcha ref={captchaRef}></frontend-captcha>
       )}
 
       <button type="submit">Sign Up</button>

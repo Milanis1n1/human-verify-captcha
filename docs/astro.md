@@ -11,7 +11,7 @@ Astro is perfectly suited for Web Components. You handle the component logic ent
 <form id="astro-form">
   <input type="email" placeholder="Email" required />
 
-  <human-verify-captcha id="my-captcha"></human-verify-captcha>
+  <frontend-captcha id="my-captcha"></frontend-captcha>
 
   <button type="submit">Submit</button>
 </form>
@@ -19,7 +19,7 @@ Astro is perfectly suited for Web Components. You handle the component logic ent
 <!-- This script runs on the client -->
 <script>
   // Import the library client-side
-  import 'human-verify-captcha';
+  import 'frontend-captcha';
 
   const form = document.getElementById("astro-form");
   const captcha = document.getElementById("my-captcha");
@@ -30,7 +30,7 @@ Astro is perfectly suited for Web Components. You handle the component logic ent
 
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
-    await customElements.whenDefined("human-verify-captcha");
+    await customElements.whenDefined("frontend-captcha");
 
     if (!captcha.isValid()) return;
     console.log("Success! Token:", captcha.token);

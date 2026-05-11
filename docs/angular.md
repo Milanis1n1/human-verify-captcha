@@ -11,7 +11,7 @@ To use Web Components in Angular, you must add `CUSTOM_ELEMENTS_SCHEMA` to your 
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { AppComponent } from "./app.component";
-import "human-verify-captcha"; // Import the library
+import "frontend-captcha"; // Import the library
 
 @NgModule({
   declarations: [AppComponent],

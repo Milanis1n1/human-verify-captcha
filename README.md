@@ -6,7 +6,7 @@ Zero dependencies. Highly portable. Easy to implement.
 
 ## Features
 
-- **Framework Agnostic:** Works in any modern frontend stack using Web Components (`<human-verify-captcha>`).
+- **Framework Agnostic:** Works in any modern frontend stack using Web Components (`<frontend-captcha>`).
 - **Zero Dependencies:** Pure Vanilla JS, keeping your bundle size tiny.
 - **Event-Driven:** Emits custom DOM events for easy integration with your state management.
 - **Canvas Rendering:** Renders text onto an HTML canvas with visual noise to thwart simple DOM-scraping bots.
@@ -17,9 +17,9 @@ Zero dependencies. Highly portable. Easy to implement.
 Install via npm:
 
 ```bash
-npm install human-verify-captcha
+npm install frontend-captcha
 ```
 
 ```bash
-yarn add human-verify-captcha
+yarn add frontend-captcha
 ```

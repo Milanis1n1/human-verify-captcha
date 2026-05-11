@@ -4,7 +4,7 @@ React doesn't natively listen to custom DOM events emitted by Web Components, so
 
 ```jsx
 import React, { useRef, useEffect } from "react";
-import "human-verify-captcha"; // Registers the Web Component
+import "frontend-captcha"; // Registers the Web Component
 
 export default function SignupForm() {
   const captchaRef = useRef(null);
@@ -35,7 +35,7 @@ export default function SignupForm() {
   return (
     <form onSubmit={handleSubmit}>
       <input type="email" placeholder="Email" required />
-      <human-verify-captcha ref={captchaRef}></human-verify-captcha>
+      <frontend-captcha ref={captchaRef}></frontend-captcha>
       <button type="submit">Sign Up</button>
     </form>
   );

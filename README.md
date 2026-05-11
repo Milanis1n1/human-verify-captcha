@@ -6,7 +6,7 @@ Zero dependencies. Highly portable. Easy to implement.
 
 ## Features
 
-- **Framework Agnostic:** Works in any modern frontend stack using Web Components (`<frontend-captcha>`).
+- **Framework Agnostic:** Works in any modern frontend stack using Web Components (`<frontend-captcha site-key="pub_front_9988776655">`).
 - **Zero Dependencies:** Pure Vanilla JS, keeping your bundle size tiny.
 - **Event-Driven:** Emits custom DOM events for easy integration with your state management.
 - **Canvas Rendering:** Renders text onto an HTML canvas with visual noise to thwart simple DOM-scraping bots.

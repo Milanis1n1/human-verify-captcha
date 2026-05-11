@@ -42,7 +42,7 @@ export default function NextJsSignupForm() {
       <input type="email" placeholder="Email" required />
 
       {isLoaded && (
-        <frontend-captcha ref={captchaRef}></frontend-captcha>
+        <frontend-captcha site-key="pub_front_9988776655" ref={captchaRef}></frontend-captcha>
       )}
 
       <button type="submit">Sign Up</button>

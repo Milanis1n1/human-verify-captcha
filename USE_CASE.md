@@ -1,6 +1,6 @@
 # Framework Integration Guide (USE_CASES.md)
 
-Because `frontend-captcha` is built as a native Web Component (`<frontend-captcha>`), it works seamlessly across any modern frontend framework.
+Because `frontend-captcha` is built as a native Web Component (`<frontend-captcha site-key="pub_front_9988776655">`), it works seamlessly across any modern frontend framework.
 
 Below are step-by-step implementation examples for the most popular frameworks.
 

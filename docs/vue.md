@@ -13,6 +13,7 @@ Vue has excellent, native support for Web Components. You can listen to custom e
 
     <frontend-captcha
       ref="captchaComponent"
+      site-key="pub_front_9988776655"
       @captcha-suspicious-activity="handleSuspicious"
     ></frontend-captcha>
 

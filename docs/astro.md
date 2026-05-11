@@ -11,7 +11,7 @@ Astro is perfectly suited for Web Components. You handle the component logic ent
 <form id="astro-form">
   <input type="email" placeholder="Email" required />
 
-  <frontend-captcha id="my-captcha"></frontend-captcha>
+  <frontend-captcha site-key="pub_front_9988776655" id="my-captcha"></frontend-captcha>
 
   <button type="submit">Submit</button>
 </form>

@@ -25,6 +25,7 @@ Svelte treats Web Components almost identically to native HTML elements. You can
   <input type="email" placeholder="Enter your email" required />
 
   <frontend-captcha
+    site-key="pub_front_9988776655"
     bind:this={captchaRef}
     on:captcha-suspicious-activity={handleSuspicious}
   ></frontend-captcha>

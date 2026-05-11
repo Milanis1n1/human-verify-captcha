@@ -1,0 +1,14 @@
+{
+  "name": "human-verify-captcha",
+  "version": "1.0.0",
+  "description": "Framework-agnostic CAPTCHA component",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "type": "module",
+  "scripts": {
+    "build": "esbuild src/index.js --bundle --minify --outfile=dist/index.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.0"
+  }
+}

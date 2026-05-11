@@ -1,6 +1,6 @@
 {
   "name": "frontend-captcha",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "Framework-agnostic CAPTCHA component",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -10,5 +10,21 @@
   },
   "devDependencies": {
     "esbuild": "^0.28.0"
-  }
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Milanis1n1/human-verify-captcha.git"
+  },
+  "keywords": [
+    "captcha",
+    "human-verify",
+    "verification",
+    "security",
+    "frontend"
+  ],
+  "author": "Milanis1n1",
+  "license": "MIT"
 }
